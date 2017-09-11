@@ -9,8 +9,7 @@ MoneybirdAPI * MoneybirdAPI::create(bool showDebugger)
 {
 	if(!constructed)
 	{
-		moneybird = new MoneybirdAPI("Bearer 3abf50296c4a19c2b4498aa09270fe45e019ed8a0958fbc7f0b078864ef90a9c"
-									 , "157733986296137360");
+		moneybird = new MoneybirdAPI("Access token", "Administration ID");
 		constructed = true;
 
 		if (showDebugger)
